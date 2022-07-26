@@ -1,0 +1,39 @@
+{
+    "Grades":[
+        {
+            "id": 1,
+            "name": "Intro to AI",
+            "score": 8
+        },
+        {
+            "id": 2,
+            "name": "Object Oriented Programing",
+            "score": 9
+        },
+        {
+            "id": 3,
+            "name": "Data Visualisation",
+            "score": 9.2
+        },
+        {
+            "id": 4,
+            "name": "AI for Games",
+            "score": 8.3
+        },
+        {
+            "id": 5,
+            "name": "Creating Web Application",
+            "score": 9
+        },
+        {
+            "id": 6,
+            "name": "Development Project",
+            "score": 8.5
+        },
+        {
+            "id": 7,
+            "name": "Cloud Computing",
+            "score": 9
+        }
+    ]
+}
