@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Week 1</title>
+        <script src="./index.js"></script>
+
+        <style>
+
+            /* table */
+            #table_example {
+              font-family: Arial, Helvetica, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            #table_example td, #table_example th {
+              border: 1px solid #ddd;
+              padding: 8px;
+            }
+            
+            #table_example tr:nth-child(even){background-color: #f2f2f2;}
+            
+            #table_example tr:hover {background-color: #ddd;}
+            
+            #table_example th {
+              padding-top: 12px;
+              padding-bottom: 12px;
+              text-align: left;
+              background-color: #004e92;
+              color: white;
+            }
+
+            /* Create loader while waiting for the get data */
+            #loader {
+                border: 16px solid #f3f3f3;
+                border-radius: 50%;
+                border-top: 16px solid #3498db;
+                width: 120px;
+                height: 120px;
+                -webkit-animation: spin 2s linear infinite; /* Safari */
+                animation: spin 2s linear infinite;
+              }
+              
+              /* Safari */
+              @-webkit-keyframes spin {
+                0% { -webkit-transform: rotate(0deg); }
+                100% { -webkit-transform: rotate(360deg); }
+              }
+              
+              @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+              }
+
+
+              /* button */
+              button{
+                margin-bottom: 10px;
+              }
+            </style>
+
+
+    </head>
+    <body>
+        <h3>JavaScript App</h3>
+        <!-- loader while waiting to retrieve the data from api -->
+        <div id="loader"></div>
+
+        <!-- last update text -->
+        <p id = "last_update"></p>
+
+        <!-- refresh button -->
+        <button type="button" onclick="getData();" id ="refresh">Refresh</button>
+        
+        <!-- table -->
+        <div id="table_example"></div>
+    </body>
+
+</html>
