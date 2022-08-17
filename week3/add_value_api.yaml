@@ -1,0 +1,22 @@
+openapi: "3.0.1"
+info:
+  title: "addValue"
+  version: "2022-08-03 03:57:37UTC"
+servers:
+- url: "https://1x7dzekz41.execute-api.ap-southeast-2.amazonaws.com/{basePath}"
+  variables:
+    basePath:
+      default: ""
+paths:
+  /addValueDB:
+    post:
+      responses:
+        default:
+          description: "Default response for POST /addValueDB"
+      x-amazon-apigateway-integration:
+        payloadFormatVersion: "2.0"
+        type: "aws_proxy"
+        httpMethod: "POST"
+        uri: "arn:aws:apigateway:ap-southeast-2:lambda:path/2015-03-31/functions/arn:aws:lambda:ap-southeast-2:931299814805:function:addValueDB/invocations"
+        connectionType: "INTERNET"
+x-amazon-apigateway-importexport-version: "1.0"
