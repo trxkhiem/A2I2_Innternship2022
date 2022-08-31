@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         roundButton.addTarget(self, action: #selector(getStart), for: .touchUpInside)
         // Do any additional setup after loading the view.
     }
+    
     @objc private func getStart(){
         guard let url = URL(string: "https://main.d2a8gmdwh094j5.amplifyapp.com/") else {
             return

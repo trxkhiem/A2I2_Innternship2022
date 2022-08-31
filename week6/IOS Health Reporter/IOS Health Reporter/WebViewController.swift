@@ -29,6 +29,7 @@ class WebViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError()
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(webView)
@@ -41,7 +42,6 @@ class WebViewController: UIViewController {
         super.viewDidLayoutSubviews()
         webView.frame = view.bounds
     }
-    
     
     private func configureButtons(){
         navigationItem.leftBarButtonItem = UIBarButtonItem (title: "Done", style: .done, target: self, action: #selector(tapDone))
