@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  IOS Health Reporter
 //
-//  Created by Truong Xuan Khiem on 29/8/2022.
+//  Created by Truong Xuan Khiem on 31/8/2022.
 //
 
 import UIKit
