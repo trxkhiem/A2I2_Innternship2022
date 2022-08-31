@@ -7,29 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E2BCCE128BF1A5C0000956A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2BCCE028BF1A5C0000956A /* AppDelegate.swift */; };
-		5E2BCCE328BF1A5C0000956A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2BCCE228BF1A5C0000956A /* SceneDelegate.swift */; };
-		5E2BCCE528BF1A5C0000956A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2BCCE428BF1A5C0000956A /* ViewController.swift */; };
-		5E2BCCE828BF1A5C0000956A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2BCCE628BF1A5C0000956A /* Main.storyboard */; };
-		5E2BCCEA28BF1A5C0000956A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2BCCE928BF1A5C0000956A /* Assets.xcassets */; };
-		5E2BCCED28BF1A5C0000956A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2BCCEB28BF1A5C0000956A /* LaunchScreen.storyboard */; };
-		5E2BCCF528BF1D6A0000956A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2BCCF428BF1D6A0000956A /* WebViewController.swift */; };
+		5E2BCCBB28BF0C300000956A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2BCCBA28BF0C300000956A /* AppDelegate.swift */; };
+		5E2BCCBD28BF0C300000956A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2BCCBC28BF0C300000956A /* SceneDelegate.swift */; };
+		5E2BCCBF28BF0C300000956A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2BCCBE28BF0C300000956A /* ViewController.swift */; };
+		5E2BCCC228BF0C300000956A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2BCCC028BF0C300000956A /* Main.storyboard */; };
+		5E2BCCC428BF0C310000956A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2BCCC328BF0C310000956A /* Assets.xcassets */; };
+		5E2BCCC728BF0C310000956A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2BCCC528BF0C310000956A /* LaunchScreen.storyboard */; };
+		5E2BCCCF28BF13EB0000956A /* Web ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2BCCCE28BF13EB0000956A /* Web ViewController.swift */; };
+		5E2BCCD128BF15220000956A /* IOS Health Reporter in Resources */ = {isa = PBXBuildFile; fileRef = 5E2BCCD028BF15220000956A /* IOS Health Reporter */; };
+		5E2BCCD328BF152A0000956A /* IOS Health Reporter in Resources */ = {isa = PBXBuildFile; fileRef = 5E2BCCD228BF152A0000956A /* IOS Health Reporter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E2BCCDD28BF1A5C0000956A /* IOS Health Reporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Health Reporter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E2BCCE028BF1A5C0000956A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E2BCCE228BF1A5C0000956A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5E2BCCE428BF1A5C0000956A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5E2BCCE728BF1A5C0000956A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5E2BCCE928BF1A5C0000956A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5E2BCCEC28BF1A5C0000956A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5E2BCCEE28BF1A5C0000956A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E2BCCF428BF1D6A0000956A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		5E2BCCB728BF0C300000956A /* IOS Health Reporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Health Reporter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E2BCCBA28BF0C300000956A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E2BCCBC28BF0C300000956A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5E2BCCBE28BF0C300000956A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E2BCCC128BF0C300000956A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E2BCCC328BF0C310000956A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E2BCCC628BF0C310000956A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E2BCCC828BF0C310000956A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E2BCCCE28BF13EB0000956A /* Web ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Web ViewController.swift"; sourceTree = "<group>"; };
+		5E2BCCD028BF15220000956A /* IOS Health Reporter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "IOS Health Reporter"; sourceTree = SOURCE_ROOT; };
+		5E2BCCD228BF152A0000956A /* IOS Health Reporter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "IOS Health Reporter"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5E2BCCDA28BF1A5C0000956A /* Frameworks */ = {
+		5E2BCCB428BF0C300000956A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,47 +43,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E2BCCD428BF1A5C0000956A = {
+		5E2BCCAE28BF0C300000956A = {
 			isa = PBXGroup;
 			children = (
-				5E2BCCDF28BF1A5C0000956A /* IOS Health Reporter */,
-				5E2BCCDE28BF1A5C0000956A /* Products */,
+				5E2BCCB928BF0C300000956A /*   */,
+				5E2BCCB828BF0C300000956A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5E2BCCDE28BF1A5C0000956A /* Products */ = {
+		5E2BCCB828BF0C300000956A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E2BCCDD28BF1A5C0000956A /* IOS Health Reporter.app */,
+				5E2BCCB728BF0C300000956A /* IOS Health Reporter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5E2BCCDF28BF1A5C0000956A /* IOS Health Reporter */ = {
+		5E2BCCB928BF0C300000956A /*   */ = {
 			isa = PBXGroup;
 			children = (
-				5E2BCCE028BF1A5C0000956A /* AppDelegate.swift */,
-				5E2BCCE228BF1A5C0000956A /* SceneDelegate.swift */,
-				5E2BCCE428BF1A5C0000956A /* ViewController.swift */,
-				5E2BCCE628BF1A5C0000956A /* Main.storyboard */,
-				5E2BCCE928BF1A5C0000956A /* Assets.xcassets */,
-				5E2BCCEB28BF1A5C0000956A /* LaunchScreen.storyboard */,
-				5E2BCCEE28BF1A5C0000956A /* Info.plist */,
-				5E2BCCF428BF1D6A0000956A /* WebViewController.swift */,
+				5E2BCCBA28BF0C300000956A /* AppDelegate.swift */,
+				5E2BCCBC28BF0C300000956A /* SceneDelegate.swift */,
+				5E2BCCBE28BF0C300000956A /* ViewController.swift */,
+				5E2BCCC028BF0C300000956A /* Main.storyboard */,
+				5E2BCCC328BF0C310000956A /* Assets.xcassets */,
+				5E2BCCC528BF0C310000956A /* LaunchScreen.storyboard */,
+				5E2BCCC828BF0C310000956A /* Info.plist */,
+				5E2BCCD228BF152A0000956A /* IOS Health Reporter */,
+				5E2BCCCE28BF13EB0000956A /* Web ViewController.swift */,
+				5E2BCCD028BF15220000956A /* IOS Health Reporter */,
 			);
-			path = "IOS Health Reporter";
+			path = " ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5E2BCCDC28BF1A5C0000956A /* IOS Health Reporter */ = {
+		5E2BCCB628BF0C300000956A /* IOS Health Reporter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E2BCCF128BF1A5C0000956A /* Build configuration list for PBXNativeTarget "IOS Health Reporter" */;
+			buildConfigurationList = 5E2BCCCB28BF0C310000956A /* Build configuration list for PBXNativeTarget "IOS Health Reporter" */;
 			buildPhases = (
-				5E2BCCD928BF1A5C0000956A /* Sources */,
-				5E2BCCDA28BF1A5C0000956A /* Frameworks */,
-				5E2BCCDB28BF1A5C0000956A /* Resources */,
+				5E2BCCB328BF0C300000956A /* Sources */,
+				5E2BCCB428BF0C300000956A /* Frameworks */,
+				5E2BCCB528BF0C300000956A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -87,25 +93,25 @@
 			);
 			name = "IOS Health Reporter";
 			productName = "IOS Health Reporter";
-			productReference = 5E2BCCDD28BF1A5C0000956A /* IOS Health Reporter.app */;
+			productReference = 5E2BCCB728BF0C300000956A /* IOS Health Reporter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5E2BCCD528BF1A5C0000956A /* Project object */ = {
+		5E2BCCAF28BF0C300000956A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					5E2BCCDC28BF1A5C0000956A = {
+					5E2BCCB628BF0C300000956A = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 5E2BCCD828BF1A5C0000956A /* Build configuration list for PBXProject "IOS Health Reporter" */;
+			buildConfigurationList = 5E2BCCB228BF0C300000956A /* Build configuration list for PBXProject "IOS Health Reporter" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +119,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 5E2BCCD428BF1A5C0000956A;
-			productRefGroup = 5E2BCCDE28BF1A5C0000956A /* Products */;
+			mainGroup = 5E2BCCAE28BF0C300000956A;
+			productRefGroup = 5E2BCCB828BF0C300000956A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5E2BCCDC28BF1A5C0000956A /* IOS Health Reporter */,
+				5E2BCCB628BF0C300000956A /* IOS Health Reporter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5E2BCCDB28BF1A5C0000956A /* Resources */ = {
+		5E2BCCB528BF0C300000956A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E2BCCED28BF1A5C0000956A /* LaunchScreen.storyboard in Resources */,
-				5E2BCCEA28BF1A5C0000956A /* Assets.xcassets in Resources */,
-				5E2BCCE828BF1A5C0000956A /* Main.storyboard in Resources */,
+				5E2BCCC728BF0C310000956A /* LaunchScreen.storyboard in Resources */,
+				5E2BCCC428BF0C310000956A /* Assets.xcassets in Resources */,
+				5E2BCCC228BF0C300000956A /* Main.storyboard in Resources */,
+				5E2BCCD128BF15220000956A /* IOS Health Reporter in Resources */,
+				5E2BCCD328BF152A0000956A /* IOS Health Reporter in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5E2BCCD928BF1A5C0000956A /* Sources */ = {
+		5E2BCCB328BF0C300000956A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E2BCCE528BF1A5C0000956A /* ViewController.swift in Sources */,
-				5E2BCCE128BF1A5C0000956A /* AppDelegate.swift in Sources */,
-				5E2BCCE328BF1A5C0000956A /* SceneDelegate.swift in Sources */,
-				5E2BCCF528BF1D6A0000956A /* WebViewController.swift in Sources */,
+				5E2BCCCF28BF13EB0000956A /* Web ViewController.swift in Sources */,
+				5E2BCCBF28BF0C300000956A /* ViewController.swift in Sources */,
+				5E2BCCBB28BF0C300000956A /* AppDelegate.swift in Sources */,
+				5E2BCCBD28BF0C300000956A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5E2BCCE628BF1A5C0000956A /* Main.storyboard */ = {
+		5E2BCCC028BF0C300000956A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5E2BCCE728BF1A5C0000956A /* Base */,
+				5E2BCCC128BF0C300000956A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		5E2BCCEB28BF1A5C0000956A /* LaunchScreen.storyboard */ = {
+		5E2BCCC528BF0C310000956A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5E2BCCEC28BF1A5C0000956A /* Base */,
+				5E2BCCC628BF0C310000956A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +178,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5E2BCCEF28BF1A5C0000956A /* Debug */ = {
+		5E2BCCC928BF0C310000956A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,7 +239,7 @@
 			};
 			name = Debug;
 		};
-		5E2BCCF028BF1A5C0000956A /* Release */ = {
+		5E2BCCCA28BF0C310000956A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -286,7 +294,7 @@
 			};
 			name = Release;
 		};
-		5E2BCCF228BF1A5C0000956A /* Debug */ = {
+		5E2BCCCC28BF0C310000956A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -313,7 +321,7 @@
 			};
 			name = Debug;
 		};
-		5E2BCCF328BF1A5C0000956A /* Release */ = {
+		5E2BCCCD28BF0C310000956A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -343,25 +351,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E2BCCD828BF1A5C0000956A /* Build configuration list for PBXProject "IOS Health Reporter" */ = {
+		5E2BCCB228BF0C300000956A /* Build configuration list for PBXProject "IOS Health Reporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E2BCCEF28BF1A5C0000956A /* Debug */,
-				5E2BCCF028BF1A5C0000956A /* Release */,
+				5E2BCCC928BF0C310000956A /* Debug */,
+				5E2BCCCA28BF0C310000956A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E2BCCF128BF1A5C0000956A /* Build configuration list for PBXNativeTarget "IOS Health Reporter" */ = {
+		5E2BCCCB28BF0C310000956A /* Build configuration list for PBXNativeTarget "IOS Health Reporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E2BCCF228BF1A5C0000956A /* Debug */,
-				5E2BCCF328BF1A5C0000956A /* Release */,
+				5E2BCCCC28BF0C310000956A /* Debug */,
+				5E2BCCCD28BF0C310000956A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5E2BCCD528BF1A5C0000956A /* Project object */;
+	rootObject = 5E2BCCAF28BF0C300000956A /* Project object */;
 }

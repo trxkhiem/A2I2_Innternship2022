@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOS_Health_Reporter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NrM-XO-BFY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="453"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_background" translatesAutoresizingMaskIntoConstraints="NO" id="l3e-5P-uGa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="436"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axc-PS-uZg">
+                                        <rect key="frame" x="157" y="140" width="100" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IOS Health Reporter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvA-S3-Gd9">
+                                        <rect key="frame" x="67" y="189" width="280" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="453" id="C72-7c-LpZ"/>
+                                    <constraint firstItem="IvA-S3-Gd9" firstAttribute="top" secondItem="axc-PS-uZg" secondAttribute="bottom" constant="20" id="Gve-Dn-lLB"/>
+                                    <constraint firstAttribute="bottom" secondItem="l3e-5P-uGa" secondAttribute="bottom" constant="17" id="HIT-kv-IX2"/>
+                                    <constraint firstItem="axc-PS-uZg" firstAttribute="top" secondItem="NrM-XO-BFY" secondAttribute="top" constant="140" id="P9T-Ke-nAo"/>
+                                    <constraint firstItem="IvA-S3-Gd9" firstAttribute="centerX" secondItem="NrM-XO-BFY" secondAttribute="centerX" id="TQl-cE-5jB"/>
+                                    <constraint firstItem="axc-PS-uZg" firstAttribute="centerX" secondItem="NrM-XO-BFY" secondAttribute="centerX" id="V4v-OX-dVj"/>
+                                    <constraint firstItem="l3e-5P-uGa" firstAttribute="leading" secondItem="NrM-XO-BFY" secondAttribute="leading" id="b0t-2W-3dm"/>
+                                    <constraint firstAttribute="trailing" secondItem="l3e-5P-uGa" secondAttribute="trailing" id="kyn-aJ-FhS"/>
+                                    <constraint firstItem="l3e-5P-uGa" firstAttribute="top" secondItem="NrM-XO-BFY" secondAttribute="top" id="q6P-ko-0M9"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fy2-g4-Wyu">
+                                <rect key="frame" x="117" y="547" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Started">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="1" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NrM-XO-BFY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FDN-vH-slc"/>
+                            <constraint firstItem="NrM-XO-BFY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="R29-mF-mtD"/>
+                            <constraint firstItem="NrM-XO-BFY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="unI-hv-Sop"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="roundButton" destination="fy2-g4-Wyu" id="oNM-aF-hmt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="top_background" width="361" height="441"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
