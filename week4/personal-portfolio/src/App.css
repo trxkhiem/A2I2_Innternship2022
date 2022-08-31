@@ -388,14 +388,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skillMainTitle{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.skillTitle{
-  margin-top: 10px;
-  padding: 0;
-  line-height: normal;
-  text-decoration: none;
+
+
+@media (max-width:700px) {
+	.progress {
+    background-color: white;
+    border-radius: 0px;
+    position: relative;
+    margin: 15px 30px 0px 30px;
+    height: 50px;
+    /* width: 300px; */
+  }
 }
 /************ Projects Css ************/
 .project {
@@ -578,6 +584,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
+  
+}
+
+@media (max-width:700px) {
+	.contact form button {
+		float: right;
+	}
 }
 .contact form button span {
   z-index: 1;

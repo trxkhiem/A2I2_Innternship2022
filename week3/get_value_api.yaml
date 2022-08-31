@@ -16,7 +16,7 @@ paths:
       x-amazon-apigateway-integration:
         payloadFormatVersion: "2.0"
         type: "aws_proxy"
-        httpMethod: "POST"
+        httpMethod: "GET"
         uri: "arn:aws:apigateway:ap-southeast-2:lambda:path/2015-03-31/functions/arn:aws:lambda:ap-southeast-2:931299814805:function:myFirstFunction/invocations"
         connectionType: "INTERNET"
 x-amazon-apigateway-importexport-version: "1.0"
