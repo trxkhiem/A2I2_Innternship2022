@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         roundButton.layer.borderColor = UIColor.orange.cgColor
         roundButton.layer.cornerRadius = roundButton.frame.width/2
         roundButton.layer.masksToBounds = true
-        
         roundButton.addTarget(self, action: #selector(getStart), for: .touchUpInside)
         // Do any additional setup after loading the view.
     }
