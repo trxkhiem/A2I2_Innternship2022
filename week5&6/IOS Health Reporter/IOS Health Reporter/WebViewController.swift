@@ -18,6 +18,15 @@ class WebViewController: UIViewController {
         return webView
     }()
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.addSubview(webView)
+        // Do any additional setup after loading the view.
+        webView.load(URLRequest(url: url))
+        configureButtons()
+    }
+    
     private let url:URL
     
     init(url:URL, title: String){
@@ -30,18 +39,13 @@ class WebViewController: UIViewController {
         fatalError()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.addSubview(webView)
-        // Do any additional setup after loading the view.
-        webView.load(URLRequest(url: url))
-        configureButtons()
-    }
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         webView.frame = view.bounds
     }
+    
     
     private func configureButtons(){
         navigationItem.leftBarButtonItem = UIBarButtonItem (title: "Done", style: .done, target: self, action: #selector(tapDone))
