@@ -43,7 +43,9 @@ function App() {
     const callAPI = async () => {
       Axios.get("https://ke7gmpy835.execute-api.ap-southeast-2.amazonaws.com/myFirstFunction", {}).then(
         (response) => {
-          let results = JSON.parse(response.data.body);
+         
+          console.log(response.data.body)
+          let results = response.data.body;
           if (results.length > length){
             results.forEach((result) => {
               patientListDesc += `${result.id}) Name: ${result.name}; Age: ${result.age}; Diseases: ${result.diseases} \n`
