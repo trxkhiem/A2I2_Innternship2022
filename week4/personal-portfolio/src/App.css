@@ -321,7 +321,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-
+.fetchData{
+  white-space: pre-line;
+}
 
 /************ Skills Css ************/
 .skill {

@@ -1,19 +1,18 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import profileImg from "../assets/img/prof.jpg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import profileImg from "../assets/img/doctor.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-export const Banner = () => {
+export let Banner = (props) => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Mobile Developer", "Full Stack Developer", ];
+  const toRotate = [ "Doctor", ];
   const period = 2000;
-
+  
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -55,10 +54,10 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Hi I'm Khiem</span>
-                <h1>{`I'm `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Mobile Developer", "Full Stack Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <span className="tagline">Welcome</span>
+                <h1>{`Hello, I'm `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Doctor" ]'><span className="wrap">{text}</span></span></h1>
+                  <p className="fetchData">{props.data}</p>
+                  {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
               </div>}
             </TrackVisibility>
           </Col>
