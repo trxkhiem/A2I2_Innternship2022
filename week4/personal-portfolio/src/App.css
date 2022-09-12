@@ -91,9 +91,19 @@ nav.navbar {
   position: fixed;
   width: 100%;
   top: 0;
+  background-color: #fef9f8;
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
+
+@media (max-width:760px) {
+  .logoNav{
+    margin-left: 25px;
+    width: 100%;
+  }
+}
+
+
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #fef9f8;
@@ -129,11 +139,13 @@ span.navbar-text {
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
+    margin-left: 20px;
     align-items: center;
     justify-content: center;
     line-height: 1;
     border: 1px solid #ff3d1f;
 }
+
 .social-icon a::before {
     content: "";
     width: 42px;
@@ -202,19 +214,24 @@ nav.navbar .navbar-toggler-icon {
   height: 17px;
   background-image: none;
   position: relative;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid darkorange;
   transition: all 300ms linear;
   top: -2px;
 }
+
+/* .navbar-toggler-icon{
+  border-color: black;
+  background-color: black !important;
+} */
 nav.navbar .navbar-toggler-icon:focus {
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid darkorange;
 }
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
 	width: 24px;
 	position: absolute;
 	height: 2px;
-	background-color: #fff;
+	background-color: darkorange;
 	top: 0;
 	left: 0;
 	content: '';
@@ -246,17 +263,35 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 80%;
   border-radius: 50%;
   padding: 5px;
+  
 
+}
 
+@media (min-width:800px) {
+	.image-container img{
+    margin-left: 80px;
+    
+  
+  }
 }
 
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 160px 0 100px 0;
   /* background-image: url('./assets/img/banner-bg.png'); */
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width:500px) {
+	.banner {
+    margin-top: 0;
+    padding: 120px 0 100px 0;
+  }
+  .image-container img{
+    margin-top: 40px;
+  }
 }
 .banner .tagline {
   font-weight: 700;
@@ -323,6 +358,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .fetchData{
   white-space: pre-line;
+  margin-top: 20px;
 }
 
 /************ Skills Css ************/
@@ -618,6 +654,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
@@ -742,3 +779,6 @@ blockquote.EN:after{
     font-size: 50px;
     color: #ef9273;
 }
+
+
+/************ Table Css ************/

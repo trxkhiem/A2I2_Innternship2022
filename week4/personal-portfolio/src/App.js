@@ -12,7 +12,7 @@ import { Footer } from "./components/Footer";
 
 function App() {
 
-  let [patientListDesc, setDesc] = useState("This is the list of the patients that is fetch from an endpoint. \n \n");
+  let [patientList, setList] = useState([]);
   let length = 0
   // // Similar to componentDidMount and componentDidUpdate:
   // useEffect(() => {
@@ -41,19 +41,17 @@ function App() {
   useLayoutEffect(() => {
     //check local token or something
     const callAPI = async () => {
+
       Axios.get("https://ke7gmpy835.execute-api.ap-southeast-2.amazonaws.com/myFirstFunction", {}).then(
         (response) => {
-         
-          console.log(response.data.body)
           let results = response.data.body;
           if (results.length > length){
-            results.forEach((result) => {
-              patientListDesc += `${result.id}) Name: ${result.name}; Age: ${result.age}; Diseases: ${result.diseases} \n`
-            });
-            console.log("check check")
-            console.log(patientListDesc)
-            const descResult = patientListDesc
-            setDesc(descResult)
+            // results.forEach((result) => {
+            //   patientListDesc += `${result.id}) Name: ${result.name}; Age: ${result.age}; Diseases: ${result.diseases} \n`
+            // });
+            // const descResult = patientListDesc
+            patientList = results
+            setList(results)
             length = results.length
           }
          
@@ -66,9 +64,9 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Banner data={patientListDesc}/>
-      <Skills />
-      <Projects />
+      <Banner data={patientList}/>
+      {/* <Skills /> */}
+      {/* <Projects /> */}
       <Contact />
       <Footer />
       
