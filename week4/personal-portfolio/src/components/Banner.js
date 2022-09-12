@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import profileImg from "../assets/img/doctor.png";
+
+
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { Table } from "./table";
+
 
 export let Banner = (props) => {
   const [loopNum, setLoopNum] = useState(0);
@@ -45,7 +49,7 @@ export let Banner = (props) => {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
-
+  
   return (
     <section className="banner" id="home">
       <Container>
@@ -56,8 +60,10 @@ export let Banner = (props) => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome</span>
                 <h1>{`Hello, I'm `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Doctor" ]'><span className="wrap">{text}</span></span></h1>
-                  <p className="fetchData">{props.data}</p>
+                  <p className="fetchData">Below is the list of the patients that is fetch from an endpoint. </p><br/>
                   {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
+                  <Table data={props.data} rowsPerPage={6}/>
+                  
               </div>}
             </TrackVisibility>
           </Col>

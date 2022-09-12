@@ -19,8 +19,8 @@ export const Newsletter = ({}) => {
             </Col>
           </Row> */}
           <blockquote className="callout quote EN">
-            Small is not just a stepping-stone. Small is a great destination itself.
-            <cite> - Jason Fried</cite>
+          Good health is not something we can buy. However, it can be an extremely valuable savings account.
+            <cite> - Anne Wilson Schaef</cite>
           </blockquote>
         </div>
       </Col>

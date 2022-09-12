@@ -5,11 +5,9 @@ import TrackVisibility from 'react-on-screen';
 
 export const Contact = () => {
   const formInitialDetails = {
-    fName: '',
-    lName: '',
-    email: '',
-    phone: '',
-    message: ''
+    name: '',
+    age: 0,
+    diseases: ''
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
@@ -26,20 +24,15 @@ export const Contact = () => {
     e.preventDefault();
     setButtonText("Sending...");
     console.log(JSON.stringify(formDetails))
-    let response = await fetch("https://ku15g6obu1.execute-api.ap-southeast-2.amazonaws.com/postFeedback", {
+    let response = await fetch("https://1x7dzekz41.execute-api.ap-southeast-2.amazonaws.com/addValueDB", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-        "Access-Control-Allow-Headers":"Origin, X-Requested-With, Content-Type, Accept, Authorization",
-        "Access-Control-Allow-Origin":"*",
-        "Access-Control-Allow-Methods":"POST"
-      },
       body: JSON.stringify(formDetails),
     });
     setButtonText("Send");
     let result = await response.json();
+    console.log("result is here: " + result.message)
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
+    if (result.Code == 200) {
       setStatus({ succes: true, message: 'Message sent successfully'});
     } else {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
@@ -61,29 +54,29 @@ export const Contact = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Get In Touch</h2>
+                <h2>Enquiries</h2>
                 <form onSubmit={handleSubmit}>
                   <Row>
-                    <Col size={12} sm={6} className="px-1">
+                    {/* <Col size={12} sm={6} className="px-1">
                       <input type="text" value={formDetails.fName} placeholder="First Name" onChange={(e) => onFormUpdate('fName', e.target.value)} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
                       <input type="text" value={formDetails.lName} placeholder="Last Name" onChange={(e) => onFormUpdate('lName', e.target.value)}/>
+                    </Col> */}
+                    <Col size={12} sm={9} className="px-1">
+                      <input type="text" value={formDetails.name} placeholder="Name" onChange={(e) => onFormUpdate('name', e.target.value)} />
                     </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="tel" value={formDetails.phone} placeholder="Phone No." onChange={(e) => onFormUpdate('phone', e.target.value)}/>
+                    <Col size={12} sm={3} className="px-1">
+                      <input type="number" value={formDetails.age} placeholder="Age" onChange={(e) => onFormUpdate('age', e.target.value)}/>
                     </Col>
                     <Col size={12} className="px-1">
-                      <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                      <textarea rows="6" value={formDetails.diseases} placeholder="Issues" onChange={(e) => onFormUpdate('diseases', e.target.value)}></textarea>
                       <button type="submit"><span>{buttonText}</span></button>
                     </Col>
                     {
                       status.message &&
                       <Col>
-                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+                        <p className={status.success ===false?  "danger":"success"}>{status.message}</p>
                       </Col>
                     }
                   </Row>

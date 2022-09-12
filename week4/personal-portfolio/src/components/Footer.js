@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/img/letter-k.png";
+import logo from "../assets/img/healthcare.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
@@ -16,12 +16,11 @@ export const Footer = () => {
             
           </Col>
           <Col size={12} sm={3} className="text-center text-sm-start">
-            <p>Email: khiemtruongxuan@gmail.com</p>
+            <p className="emailText">Email: abc@gmail.com</p>
             <p>Location: Melbourne 3000, VIC, Australia</p>
             <div className="social-icon">
               <a href="#"><img src={navIcon1} alt="Icon" /></a>
               <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
               <a href="#"><img src={navIcon3} alt="Icon" /></a>
             </div>
             
