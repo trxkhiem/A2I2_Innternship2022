@@ -46,10 +46,6 @@ function App() {
         (response) => {
           let results = response.data.body;
           if (results.length > length){
-            // results.forEach((result) => {
-            //   patientListDesc += `${result.id}) Name: ${result.name}; Age: ${result.age}; Diseases: ${result.diseases} \n`
-            // });
-            // const descResult = patientListDesc
             patientList = results
             setList(results)
             length = results.length
