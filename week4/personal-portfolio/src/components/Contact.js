@@ -21,11 +21,15 @@ export const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
-    if (formDetails.name == "" ) {
-      setStatus({ success: false, message: 'Please enter your name!'});
-    } else if (formDetails.diseases == "None"){
-      setStatus({ success: false, message: 'Please choose one of the disease!'});
-    } else {
+    if(formDetails.name === "" || formDetails.diseases === "None"){
+      e.preventDefault();
+      if (formDetails.name === "" ) {
+        setStatus({ success: false, message: 'Please enter your name!'});
+      } else {
+        setStatus({ success: false, message: 'Please choose one of the disease!'});
+      }
+    }
+    else {
       e.preventDefault();
       setButtonText("Sending...");
       console.log(JSON.stringify(formDetails))
@@ -35,9 +39,8 @@ export const Contact = () => {
       });
       setButtonText("Send");
       let result = await response.json();
-      console.log("result is here: " + result.message)
-      setFormDetails(formInitialDetails);
-      if (result.Code == 200) {
+      // setFormDetails(formInitialDetails);
+      if (result.Code === 200) {
         setStatus({ success: true, message: 'Message sent successfully'});
       } else {
         setStatus({ success: false, message: 'Something went wrong, please try again later.'});
